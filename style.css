@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: rgb(214, 151, 16);
+  --main-bg-color-secondary: #eee;
+
+  --shadow-bg-color-primary: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+
+  --shadow-bg-color-secondary: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: "Muli", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow-bg-color-primary);
+  color: var(--main-bg-color-secondary);
+  max-width: 1000px;
+  padding: 60px;
+  text-align: center;
+}
+
+.numero-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.numero {
+  border-radius: 5px;
+  border: 1px solid var(--main-bg-color-secondary);
+  box-shadow: var(--shadow-bg-color-secondary);
+  font-size: 40px;
+  font-weight: 300;
+  height: 60px;
+  margin: 1%;
+  text-align: center;
+  width: 80px;
+}
+
+.numero::-webkit-outer-spin-button,
+.numero::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.numero:valid {
+  box-shadow: var(--shadow-bg-color-primary);
+}
+
+input:focus-visible {
+  outline: unset;
+  border: none;
+}
